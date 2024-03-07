@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>KirIA</h1>
+        </div>
+    </header>
+
+    <nav class="chat-container" id="chat-container">
+        <div class="phone" id="phone">
+            <div class="screen" id="chat-screen">
+                <div class="message received">Bonjour ! Comment puis-je vous aider ?</div>
+            </div>
+            <div class="input-container">
+                <textarea id="user-input" placeholder="Type a message..."></textarea>
+                <button onclick="sendMessage()" class="send-button">&#10148;</button>
+
+            </div>
+        </div>
+        <div class="resize-handle" id="resize-handle"></div>
+    </nav>
+
+    <footer>
+        <button id="toggle-chatbot" onclick="toggleChatbot()" class="chat-icon">&#128172;</button>
+
+
+        <div class="footer-content">
+            <p>Created By Robinsan Kiritheepan</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
